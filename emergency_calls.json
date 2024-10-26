@@ -1,38 +1,37 @@
 [
   {
-    "timestamp": "2024-10-26T13:31:21.168362",
-    "call_text": "I lost my dog.",
+    "timestamp": "2024-10-26T14:40:55.782777",
+    "call_text": "Stately.",
     "priority": "GREEN",
-    "summary": "lost my dog",
-    "confidence": "80"
+    "summary": "word not emergency",
+    "confidence": "90"
   },
   {
-    "timestamp": "2024-10-26T13:33:11.939164",
-    "call_text": "I need help.",
+    "timestamp": "2024-10-26T15:03:54.648956",
+    "call_text": "I lost my cat.",
+    "priority": "GREEN",
+    "summary": "cat lost report",
+    "confidence": "90"
+  },
+  {
+    "timestamp": "2024-10-26T15:03:57.521424",
+    "call_text": "My dog is missing.",
+    "priority": "GREEN",
+    "summary": "dog missing call",
+    "confidence": "70"
+  },
+  {
+    "timestamp": "2024-10-26T15:04:18.947225",
+    "call_text": "There's blood everywhere. I need help quick.",
     "priority": "RED",
-    "summary": "help needed urgent",
-    "confidence": "70"
+    "summary": "blood need help",
+    "confidence": "90"
   },
   {
-    "timestamp": "2024-10-26T13:41:34.622549",
-    "call_text": "Hello, my dog is lost. I don't know where it is.",
-    "priority": "GREEN",
-    "summary": "dog lost missing",
-    "confidence": "80"
-  },
-  {
-    "timestamp": "2024-10-26T14:06:54.102169",
-    "call_text": "I need help with my dog is stuck in the tree.",
-    "priority": "GREEN",
-    "summary": "dog tree stuck",
-    "confidence": "70"
-  },
-  {
-    "timestamp": "2024-10-26T14:10:57.459589",
-    "call_text": "My cats lost.",
-    "priority": "GREEN",
-    "summary": "cat lost missing",
+    "timestamp": "2024-10-26T15:04:55.564500",
+    "call_text": "I just kept tabs on dying.",
+    "priority": "RED",
+    "summary": "kept tabs dying",
     "confidence": "90"
   }
-]  }
 ]

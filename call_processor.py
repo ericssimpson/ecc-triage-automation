@@ -29,7 +29,7 @@ class EmergencyPriority(Enum):
 class Department(Enum):
     EMS = 3
     FIREDEPT = 2
-    POLICEDEPT = 3
+    POLICEDEPT = 1
 
 
 @dataclass
@@ -116,7 +116,7 @@ class EmergencyCallProcessor:
                     
                     2: FIRDEPT - the words you are hearing relate to the fire hazard in public space and require fire department to operate.  
                     
-                    3: POLICEDEPT - the words you are hearing relate to the violence, community safety, and  
+                    3: POLICEDEPT - the words you are hearing relate to the violence, community safety, and everything concerning policing. 
 
                     An example output you will provide will be in the form of a JSON, such as 
                     (priority: 'GREEN' ) (summary: 'cat tree lost' ) (department: 'POLICEDEPT') ( confidence: '60' )
@@ -125,6 +125,7 @@ class EmergencyCallProcessor:
                     {
                         "priority": "PRIORITY_LEVEL",
                         "summary": "summary of event"
+                        "department": "DEPARTMENT"
                     }
                     """,
                     },
@@ -134,6 +135,7 @@ class EmergencyCallProcessor:
 
             analysis = json.loads(response.choices[0].message.content)
             call.priority = EmergencyPriority[analysis["priority"]]
+            call.department = Department[analysis["department"]]
             call.analysis = analysis
 
             logger.info(f"Emergency analyzed - Priority: {call.priority.name}")

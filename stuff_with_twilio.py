@@ -78,12 +78,16 @@ def test_socket():
         "send_message",
         {
             "priority": "GREEN",
+            "department": "POLICEDEPT",
             "summary": "This is a test message",
             "confidence": 95,
         },
     )
     return {
-        "message": "Message sent",
+        "priority": "GREEN",
+        "department": "POLICEDEPT",
+        "summary": "This is a test message",
+        "confidence": 95,
     }
 
 
