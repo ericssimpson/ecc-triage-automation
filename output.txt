@@ -1,0 +1,15 @@
+🔭 OpenTelemetry Tracing Details 🔭
+|  Phoenix Project: 911evaluator
+|  Span Processor: SimpleSpanProcessor
+|  Collector Endpoint: http://localhost:6006/v1/traces
+|  Transport: HTTP
+|  Transport Headers: {}
+|  
+|  Using a default SpanProcessor. `add_span_processor` will overwrite this default.
+|  
+|  `register` has set this TracerProvider as the global OpenTelemetry default.
+|  To disable this behavior, call `register` with `set_global_tracer_provider=False`.
+
+Please speak now...
+Recording finished, processing...
+Sorry, I could not understand the audio.
