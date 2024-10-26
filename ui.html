@@ -110,6 +110,12 @@
             margin-top: 15px;
         }
 
+        .dept-subtitle {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
         .dial-button {
             background: #f5f5f5;
             border: none;
@@ -200,6 +206,7 @@
                 div.topSection(
                 div.summaryBox(
                     h2('Emergency Summary'),
+                    p.deptSubtitle('Department: ' + msg.department),
                     p(msg.summary),
                 ),
                 div.confidenceScore(

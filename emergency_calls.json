@@ -57,5 +57,205 @@
     "department": "POLICEDEPT",
     "summary": "cat stuck in a tree",
     "confidence": "70"
+  },
+  {
+    "timestamp": "2024-10-26T15:30:59.764344",
+    "call_text": "I'm so sad.",
+    "priority": "GREEN",
+    "department": "POLICEDEPT",
+    "summary": "person feeling sad",
+    "confidence": "70"
+  },
+  {
+    "timestamp": "2024-10-26T15:31:21.485425",
+    "call_text": "My dad just fell off the roof. Installing Christmas lighting.",
+    "priority": "RED",
+    "department": "EMS",
+    "summary": "dad fell off the roof",
+    "confidence": "90"
+  },
+  {
+    "timestamp": "2024-10-26T15:35:21.318450",
+    "call_text": "My cat is dying.",
+    "priority": "RED",
+    "department": "EMS",
+    "summary": "cat dying",
+    "confidence": "90"
+  },
+  {
+    "timestamp": "2024-10-26T15:35:26.858845",
+    "call_text": "There is blood everywhere.",
+    "priority": "RED",
+    "department": "EMS",
+    "summary": "blood everywhere",
+    "confidence": "90"
+  },
+  {
+    "timestamp": "2024-10-26T15:35:32.963445",
+    "call_text": "My house is on fire.",
+    "priority": "RED",
+    "department": "FIRDEPT",
+    "summary": "house on fire",
+    "confidence": "95"
+  },
+  {
+    "timestamp": "2024-10-26T15:36:01.289920",
+    "call_text": "I feel very sick.",
+    "priority": "ORANGE",
+    "department": "EMS",
+    "summary": "person feeling very sick",
+    "confidence": "70"
+  },
+  {
+    "timestamp": "2024-10-26T15:39:06.444446",
+    "call_text": "Help. My house is on fire.",
+    "priority": "RED",
+    "department": "FIRDEPT",
+    "summary": "house on fire",
+    "confidence": "90"
+  },
+  {
+    "timestamp": "2024-10-26T15:39:11.629705",
+    "call_text": "Help. There's blood everywhere.",
+    "priority": "RED",
+    "department": "EMS",
+    "summary": "blood everywhere",
+    "confidence": "95"
+  },
+  {
+    "timestamp": "2024-10-26T15:39:16.760250",
+    "call_text": "Someone braking to my door.",
+    "priority": "RED",
+    "department": "POLICEDEPT",
+    "summary": "someone breaking into my door",
+    "confidence": "90"
+  },
+  {
+    "timestamp": "2024-10-26T15:39:23.728355",
+    "call_text": "Mike, my cat is stuck in a tree.",
+    "priority": "GREEN",
+    "department": "POLICEDEPT",
+    "summary": "cat stuck in tree",
+    "confidence": "70"
+  },
+  {
+    "timestamp": "2024-10-26T15:39:59.708539",
+    "call_text": "My dad is missing.",
+    "priority": "ORANGE",
+    "department": "POLICEDEPT",
+    "summary": "dad missing",
+    "confidence": "80"
+  },
+  {
+    "timestamp": "2024-10-26T15:43:55.784462",
+    "call_text": "Help. My house is on fire.",
+    "priority": "RED",
+    "department": "FIRDEPT",
+    "summary": "house on fire",
+    "confidence": "95"
+  },
+  {
+    "timestamp": "2024-10-26T15:44:03.666883",
+    "call_text": "There is blood  everywhere.",
+    "priority": "RED",
+    "department": "EMS",
+    "summary": "blood everywhere",
+    "confidence": "90"
+  },
+  {
+    "timestamp": "2024-10-26T15:44:08.202411",
+    "call_text": "My dad has gone missing.",
+    "priority": "ORANGE",
+    "department": "POLICEDEPT",
+    "summary": "dad missing",
+    "confidence": "80"
+  },
+  {
+    "timestamp": "2024-10-26T15:44:14.827767",
+    "call_text": "My cat is a tree.",
+    "priority": "GREEN",
+    "department": "POLICEDEPT",
+    "summary": "cat tree lost",
+    "confidence": "60"
+  },
+  {
+    "timestamp": "2024-10-26T15:48:42.590066",
+    "call_text": "Help. My house is on fire.",
+    "priority": "RED",
+    "department": "FIRDEPT",
+    "summary": "house on fire",
+    "confidence": "95"
+  },
+  {
+    "timestamp": "2024-10-26T15:48:46.680360",
+    "call_text": "There's blood everywhere.",
+    "priority": "RED",
+    "department": "EMS",
+    "summary": "blood everywhere",
+    "confidence": "95"
+  },
+  {
+    "timestamp": "2024-10-26T15:48:52.482260",
+    "call_text": "My dad had so many thing.",
+    "priority": "GREEN",
+    "department": "POLICEDEPT",
+    "summary": "unclear situation with dad's items",
+    "confidence": "50"
+  },
+  {
+    "timestamp": "2024-10-26T15:49:02.404546",
+    "call_text": "My house is covered in cats.",
+    "priority": "GREEN",
+    "department": "POLICEDEPT",
+    "summary": "house covered in cats",
+    "confidence": "70"
+  },
+  {
+    "timestamp": "2024-10-26T15:50:39.076353",
+    "call_text": "My dad has gone missing.",
+    "priority": "ORANGE",
+    "department": "POLICEDEPT",
+    "summary": "dad missing",
+    "confidence": "75"
+  },
+  {
+    "timestamp": "2024-10-26T15:54:25.597750",
+    "call_text": "My cat is missing.",
+    "priority": "GREEN",
+    "department": "POLICEDEPT",
+    "summary": "cat missing",
+    "confidence": "80"
+  },
+  {
+    "timestamp": "2024-10-26T16:10:59.196675",
+    "call_text": "Help. My house is on fire.",
+    "priority": "RED",
+    "department": "FIRDEPT",
+    "summary": "house on fire",
+    "confidence": "95"
+  },
+  {
+    "timestamp": "2024-10-26T16:11:13.792405",
+    "call_text": "There is blood everywhere.",
+    "priority": "RED",
+    "department": "EMS",
+    "summary": "blood everywhere",
+    "confidence": "95"
+  },
+  {
+    "timestamp": "2024-10-26T16:11:21.567133",
+    "call_text": "My my dad has gone missing.",
+    "priority": "ORANGE",
+    "department": "POLICEDEPT",
+    "summary": "missing person",
+    "confidence": "70"
+  },
+  {
+    "timestamp": "2024-10-26T16:11:30.775896",
+    "call_text": "Coconut tree.",
+    "priority": "GREEN",
+    "department": "POLICEDEPT",
+    "summary": "coconut tree",
+    "confidence": "50"
   }
 ]
