@@ -33,5 +33,29 @@
     "priority": "RED",
     "summary": "kept tabs dying",
     "confidence": "90"
+  },
+  {
+    "timestamp": "2024-10-26T15:26:58.468055",
+    "call_text": "My dog has gone missing.",
+    "priority": "GREEN",
+    "department": "POLICEDEPT",
+    "summary": "dog missing",
+    "confidence": "70"
+  },
+  {
+    "timestamp": "2024-10-26T15:27:42.508954",
+    "call_text": "My dad just went missing.",
+    "priority": "ORANGE",
+    "department": "POLICEDEPT",
+    "summary": "dad missing",
+    "confidence": "75"
+  },
+  {
+    "timestamp": "2024-10-26T15:27:53.180005",
+    "call_text": "There's a cat stuck in a tree.",
+    "priority": "GREEN",
+    "department": "POLICEDEPT",
+    "summary": "cat stuck in a tree",
+    "confidence": "70"
   }
 ]

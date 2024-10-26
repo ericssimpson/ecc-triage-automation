@@ -28,13 +28,18 @@ def save_call_to_json(
     call_text: str, response_data: dict, filename: str = "emergency_calls.json"
 ) -> None:
     # Create entry with timestamp
-    call_entry = {
-        "timestamp": datetime.now().isoformat(),
-        "call_text": call_text,
-        "priority": response_data["priority"],
-        "summary": response_data["summary"],
-        "confidence": response_data["confidence"],
-    }
+
+    try:
+        call_entry = {
+            "timestamp": datetime.now().isoformat(),
+            "call_text": call_text,
+            "priority": response_data["priority"],
+            "department": response_data["department"],
+            "summary": response_data["summary"],
+            "confidence": response_data["confidence"],
+        }
+    except:  # noqa: E722
+        print("bad stuff")
 
     # Load existing data or create new list
     file_path = Path(filename)
@@ -78,6 +83,9 @@ LangChainInstrumentor().instrument(tracer_provider=tracer_provider)
 response_schemas = [
     ResponseSchema(name="priority", description="The priority of the call"),
     ResponseSchema(name="summary", description="A summary of the call"),
+    ResponseSchema(
+        name="department", description="The department the call dispatched to"
+    ),
     ResponseSchema(name="confidence", description="The confidence in the priority"),
 ]
 output_parser = StructuredOutputParser.from_response_schemas(response_schemas)
@@ -96,12 +104,25 @@ you will provide will be in the form of a JSON, such as (priority: 'RED' ) (summ
 
 3: GREEN - the nature of the call doesn't sound immediately dangerous, as in, the person calling is reporting a missing cat, or issuing a noise complaint about their neighbor, which doesn't require any type of immediate response. Example might be, the person is calling about a suspicious person, or car in their neighborhood.
 
-Also, you will only provide the threat level in terms of its priority - followed by a three word summary - or the words used by the caller that indicate to you that there is indeed a justification for the chosen priority. And you will rate your confidence in the priority level you have assigned things to.
+In addition, you will provide the department this call will be dispatched to.
+                    
+1: EMS - the words you are hearing relate to people or living animals' physical health, such as bleeding out , injury, and coma. 
+
+2: FIRDEPT - the words you are hearing relate to the fire hazard in public space and require fire department to operate.  
+
+3: POLICEDEPT - the words you are hearing relate to the violence, community safety, and everything concerning policing. 
 
 An example output you will provide will be in the form of a JSON, such as 
- (priority: 'GREEN' ) (summary: 'cat tree lost' ) ( confidence: '60' )
-{format_instructions}
-""")
+(priority: 'GREEN' ) (summary: 'cat tree lost' ) (department: 'POLICEDEPT') ( confidence: '60' )
+
+Respond in JSON format with these fields:
+{{
+    "priority": "PRIORITY_LEVEL",
+    "summary": "summary of event",
+    "confidence": "confidence of event",
+    "department": "DEPARTMENT"
+}}
+{format_instructions}""")
 
 prompt_911 = ChatPromptTemplate.from_messages([system_prompt, user_prompt])
 
@@ -116,16 +137,19 @@ llm_streaming = ChatOpenAI(
 
 def process_call(call_text: str) -> dict:
     # Get the response from the language model
+    print("whatev")
     response = llm_streaming.invoke(
         prompt_911.format_messages(
             call_text=call_text, format_instructions=format_instructions
         )
     )
+    print("whatev3")
 
     # Parse the response
     parsed_response = output_parser.parse(response.content)
-
+    print("whatev1")
     # Save to JSON file
     save_call_to_json(call_text, parsed_response)
+    print("whatev2")
 
     return parsed_response
