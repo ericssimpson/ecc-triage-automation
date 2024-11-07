@@ -15,6 +15,7 @@ opentelemetry-exporter-otlp-proto-http
 langchain-openai
 langchain
 
-# OpenInference (for LangChain instrumentation)
+# Arize packages
+arize-phoenix
+openinference-semantic-conventions
 openinference-instrumentation-langchain
-phoenix-otel
