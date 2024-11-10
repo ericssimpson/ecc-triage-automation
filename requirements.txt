@@ -1,4 +1,21 @@
+Flask
+python-dotenv
 openai
 SpeechRecognition
-pyaudio
-ascii_magic
+twilio
+Flask-SocketIO
+python-socketio
+
+# OpenTelemetry packages
+opentelemetry-api
+opentelemetry-sdk
+opentelemetry-exporter-otlp-proto-http
+
+# LangChain packages
+langchain-openai
+langchain
+
+# Arize packages
+arize-phoenix
+openinference-semantic-conventions
+openinference-instrumentation-langchain
