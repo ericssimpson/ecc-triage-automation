@@ -273,5 +273,13 @@
     "department": "POLICEDEPT",
     "summary": "Cats and dogs on house",
     "confidence": "70"
+  },
+  {
+    "timestamp": "2024-11-12T14:31:44.844611",
+    "call_text": "My house is on fire.",
+    "priority": "RED",
+    "department": "FIRDEPT",
+    "summary": "House on fire",
+    "confidence": "100"
   }
 ]
