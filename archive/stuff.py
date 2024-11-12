@@ -2,7 +2,7 @@ from dotenv import load_dotenv
 from openai import OpenAI
 import speech_recognition as sr
 import os
-from arize import process_call
+from api.arize import process_call
 
 load_dotenv()
 

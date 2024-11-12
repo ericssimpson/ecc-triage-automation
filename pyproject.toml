@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "ecc-triage-automation"
+version = "0.1.0"
+description = "Emergency Call Center Triage Automation"
+authors = [
+    "Benjamin Sobel <ultradaoto@users.noreply.github.com>",
+    "Eric Simpson <ericssimpson@users.noreply.github.com>",
+    "Michael Zhang <Heronalps@users.noreply.github.com>",
+]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.13"
+Flask = "*"
+python-dotenv = "*"
+openai = "*"
+SpeechRecognition = "*"
+twilio = "*"
+Flask-SocketIO = "*"
+python-socketio = "*"
+langchain-openai = "*"
+langchain = "*"
+arize-phoenix = "*"
+openinference-semantic-conventions = "*"
+openinference-instrumentation-langchain = "*"
+
+[tool.poetry.group.dev.dependencies]
+black = "*"
+flake8 = "*"
+pytest = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+
+[tool.black]
+line-length = 88
+include = '\.pys?$'

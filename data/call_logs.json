@@ -257,5 +257,21 @@
     "department": "POLICEDEPT",
     "summary": "coconut tree",
     "confidence": "50"
+  },
+  {
+    "timestamp": "2024-11-11T17:23:30.352692",
+    "call_text": "My house is on fire.",
+    "priority": "RED",
+    "department": "FIRDEPT",
+    "summary": "house on fire",
+    "confidence": "100"
+  },
+  {
+    "timestamp": "2024-11-11T17:35:26.080275",
+    "call_text": "Is cats and dogs on my house.",
+    "priority": "GREEN",
+    "department": "POLICEDEPT",
+    "summary": "Cats and dogs on house",
+    "confidence": "70"
   }
 ]

@@ -65,7 +65,7 @@ def answer_call():
 @app.route("/call_results", methods=["GET"])
 def call_results():
     """Display the results of the call processing"""
-    # Get ui.html from the current directory
+    # Get ui.html from the template folder
     with open("ui.html", "r") as f:
         return f.read()
 
