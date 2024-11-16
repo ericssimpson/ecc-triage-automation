@@ -18,6 +18,6 @@ docker compose -f docker-compose.arize.yml up
 
 # result
 
-see results after calling twilio number at /call_results
+see results after calling twilio number on port 5000 at /call_results
 
 view LLM and prompt information on port 6006
