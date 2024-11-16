@@ -281,5 +281,13 @@
     "department": "FIRDEPT",
     "summary": "House on fire",
     "confidence": "100"
+  },
+  {
+    "timestamp": "2024-11-14T12:59:29.725035",
+    "call_text": "My house is on fire.",
+    "priority": "RED",
+    "department": "FIRDEPT",
+    "summary": "house on fire",
+    "confidence": "100"
   }
 ]
